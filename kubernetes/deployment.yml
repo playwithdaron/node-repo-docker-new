@@ -10,8 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: random-api
-        version: v2  # New label
+        app: random-api-v2
     spec:
       containers:
       - name: react-app
