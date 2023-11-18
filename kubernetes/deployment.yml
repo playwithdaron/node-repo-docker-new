@@ -1,46 +1,24 @@
-# apiVersion: apps/v1
-# kind: Deployment
-# metadata:
-#   name: random-api
-#   namespace: random-api
-# spec:
-#   replicas: 2
-#   selector:
-#     matchLabels:
-#       app: random-api
-#   template:
-#     metadata:
-#       labels:
-#         app: random-api
-#     spec:
-#       containers:
-#       - name: random-api
-#         image: public.ecr.aws/xxxxxxxxx/react-app
-#         resources:
-#           limits:
-#             memory: "500Mi"
-#             cpu: "500m"
-#         ports:
-#           - containerPort: 80
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: random-api
-  labels:
-    env: dev
+  namespace: random-api
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      env: dev
+      app: random-api
   template:
     metadata:
       labels:
-        env: dev
+        app: random-api
     spec:
       containers:
-      - name: react-app
-        image: public.ecr.aws/c2m9p1a4/react-app
+      - name: random-api
+        image: public.ecr.aws/xxxxxxxxx/react-app
+        resources:
+          limits:
+            memory: "500Mi"
+            cpu: "500m"
         ports:
-        - containerPort: 80
+          - containerPort: 80
