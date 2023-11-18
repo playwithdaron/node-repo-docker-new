@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: random-api
-  namespace: random-api
 spec:
   replicas: 2
   selector:
