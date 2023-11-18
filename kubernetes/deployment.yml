@@ -11,6 +11,7 @@ spec:
     metadata:
       labels:
         app: random-api
+        version: v2  # New label
     spec:
       containers:
       - name: react-app
