@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: random-api
-        image: public.ecr.aws/xxxxxxxxx/react-app
+        image: public.ecr.aws/c2m9p1a4/react-app
         resources:
           limits:
             memory: "500Mi"
