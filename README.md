@@ -13,7 +13,9 @@ This mini project utilizes the Random User API to fetch and display user data. U
 
 ## Technologies Used
 
-- React
+- 
+
+
 - Redux
 - React Router
 - React Bootstrap
